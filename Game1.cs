@@ -8,6 +8,7 @@ namespace building_worlds
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Foo foo = new Foo();
 
         public Game1()
         {
@@ -28,6 +29,7 @@ namespace building_worlds
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            foo.Initialize(_graphics.GraphicsDevice);
         }
 
         protected override void Update(GameTime gameTime)
@@ -45,6 +47,7 @@ namespace building_worlds
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            foo.Draw(_spriteBatch);
 
             base.Draw(gameTime);
         }
