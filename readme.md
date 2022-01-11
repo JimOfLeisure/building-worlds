@@ -19,3 +19,8 @@ for MonoGame v3.8.
 
 It is an 'mgdesktopgl' app, so it should work on Windows, Mac, and Linux
 with an OpenGL capable video driver (which is pretty much all of them).
+
+## Credits
+
+- OpenSimplexNoise.cs - Obtained from https://gist.github.com/digitalshadow/134a3a02b67cecd72181
+  where it is in the public domain.
