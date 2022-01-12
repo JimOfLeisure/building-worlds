@@ -11,6 +11,7 @@ namespace building_worlds
         public void Initialize(GraphicsDevice device)
         {
             foo = CreateTexture(device, 100, 100, pixel => Color.Gray);
+            foo = CreateTexture(device, 100, 100, Noise);
         }
         public void Draw(SpriteBatch spriteBatch)
         {
@@ -35,6 +36,11 @@ namespace building_worlds
             texture.SetData(data);
 
             return texture;
+        }
+        public static Color Noise(int pixel)
+        {
+            float divisor = 10000;
+            return new Color(pixel / divisor, pixel / divisor, pixel / divisor, (float)1.0);
         }
     }
 }
