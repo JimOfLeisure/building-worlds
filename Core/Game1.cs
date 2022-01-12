@@ -20,6 +20,9 @@ namespace BuildingWorlds.Core
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = Data.ScreenWidth;
+            _graphics.PreferredBackBufferHeight = Data.ScreenHeight;
+            _graphics.ApplyChanges();
 
             base.Initialize();
         }
