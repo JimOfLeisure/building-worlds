@@ -1,9 +1,10 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using BuildingWorlds.External;
 using System;
 
-namespace building_worlds
+namespace BuildingWorlds.Core
 {
     class Foo
     {

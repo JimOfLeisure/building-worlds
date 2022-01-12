@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace building_worlds
+namespace BuildingWorlds.Core
 {
     public static class Program
     {

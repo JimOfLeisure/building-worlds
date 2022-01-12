@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace building_worlds
+namespace BuildingWorlds.Core
 {
     public class Game1 : Game
     {

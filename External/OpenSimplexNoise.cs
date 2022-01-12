@@ -1,4 +1,4 @@
-namespace building_worlds
+namespace BuildingWorlds.External
 {
 
     // Yoinked from https://gist.github.com/digitalshadow/134a3a02b67cecd72181
