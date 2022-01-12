@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using BuildingWorlds.Managers;
 
 namespace BuildingWorlds.Core
 {
@@ -9,6 +10,7 @@ namespace BuildingWorlds.Core
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private Foo foo = new Foo();
+        private GameStateManager gameStateManager = new GameStateManager();
 
         public Game1()
         {
@@ -33,6 +35,7 @@ namespace BuildingWorlds.Core
 
             // TODO: use this.Content to load your game content here
             foo.Initialize(_graphics.GraphicsDevice);
+            gameStateManager.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -41,6 +44,7 @@ namespace BuildingWorlds.Core
                 Exit();
 
             // TODO: Add your update logic here
+            gameStateManager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -51,6 +55,7 @@ namespace BuildingWorlds.Core
 
             // TODO: Add your drawing code here
             foo.Draw(_spriteBatch);
+            gameStateManager.Draw(_spriteBatch);
 
             base.Draw(gameTime);
         }

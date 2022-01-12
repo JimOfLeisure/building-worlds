@@ -9,5 +9,12 @@ namespace BuildingWorlds.Core
         public static int ScreenWidth { get; set; } = 800;
         public static int ScreenHeight { get; set; } = 600;
         public static bool Exit { get; set; } = false;
+        public enum Scenes
+        {
+            // Menu,
+            Game,
+            // Settings,
+        }
+        public static Scenes CurrentScene = Scenes.Game;
     }
 }
