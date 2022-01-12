@@ -8,10 +8,14 @@ namespace building_worlds
     class Foo
     {
         Texture2D foo;
+        private int width;
+        private OpenSimplexNoise noise = new OpenSimplexNoise();
+        double noiseScale = 0.02;
         public void Initialize(GraphicsDevice device)
         {
             foo = CreateTexture(device, 100, 100, pixel => Color.Gray);
-            foo = CreateTexture(device, 100, 100, Noise);
+            width = 400;
+            foo = CreateTexture(device, width, 400, NoiseMap);
         }
         public void Draw(SpriteBatch spriteBatch)
         {
@@ -37,10 +41,12 @@ namespace building_worlds
 
             return texture;
         }
-        public static Color Noise(int pixel)
+        public Color NoiseMap(int pixel)
         {
-            float divisor = 10000;
-            return new Color(pixel / divisor, pixel / divisor, pixel / divisor, (float)1.0);
+            // float divisor = 10000;
+            // return new Color(pixel / divisor, pixel / divisor, pixel / divisor, (float)1.0);
+            float value = (float)noise.Evaluate(noiseScale * (pixel % this.width), this.noiseScale * Math.Floor((double)(pixel / width)));
+            return new Color(value, value, value, (float)1.0);
         }
     }
 }
