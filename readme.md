@@ -29,7 +29,7 @@ at first but evolve over time.
 
 The word gen code is in BuildingWorlds/ . You can `dotnet build` in there or add a reference to another project.
 
-BuildingWorlds.Tests/ is for running `dotnet test`; these aren't unit tests, but just me kicking the tires on my nascent world gen library.
+BuildingWorlds.Tests/ is for running `dotnet test`; these aren't unit tests, but just me kicking the tires on my nascent world gen library. The mapout.png image is created in bin/Debug/net5.0/ for now...I'll figure that out later. But it works.
 
 ## Credits
 
