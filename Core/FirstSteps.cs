@@ -1,6 +1,3 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using BuildingWorlds.External;
 using System;
 
@@ -8,11 +5,17 @@ namespace BuildingWorlds.Core
 {
     class Foo
     {
-        Texture2D foo;
         private int width;
         private int height;
         private OpenSimplexNoise noise = new OpenSimplexNoise();
         double noiseScale = 0.007;
+        // Temp hack to delete MonoGame and keep this around for refrence
+        public enum Color
+        {
+            Blue,
+            Green,
+            Wheat,
+        }
 
         public Color NoiseMap(int pixel)
         {
