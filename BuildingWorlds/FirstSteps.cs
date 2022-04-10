@@ -1,7 +1,6 @@
-using BuildingWorlds.External;
 using System;
 
-namespace BuildingWorlds.Core
+namespace BuildingWorlds
 {
     class Foo
     {
