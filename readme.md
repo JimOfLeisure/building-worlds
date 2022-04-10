@@ -1,13 +1,18 @@
 # Building Worlds
 
+Update: Returning to this after 3 months of inactivity, I'm currently
+interested in poking at terrain generation but no longer care about
+MonoGame. I may continue to use it to display a map just because
+it's already there. Otherwise I'll use ImageSharp or something.
+
 My goals for this project:
 
-- Get familiar with MonoGame
+- ~~Get familiar with MonoGame~~
 - Experiment with world map terrain generation
-- Maybe integrate Ink narrator scripting system
+- ~~Maybe integrate Ink narrator scripting system~~
 
-I don't expect a completed game out of this project, but what does emerge might be
-some hybrid of a 4X game and a visual novel. Pieces of this project my be
+I don't expect a completed game out of this project, ~~but what does emerge might be
+some hybrid of a 4X game and a visual novel~~. Pieces of this project my be
 useful in future projects.
 
 ## Building
