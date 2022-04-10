@@ -12,7 +12,11 @@ namespace BuildingWorlds
     }
 
     // May later change this to a Vector3, so making it its own class for upgradability
-    public class Position : Vector2 { }
+    public class Position : Vector2
+    {
+        public Position(double x = 0, double y = 0) : base(x, y) { }
+
+    }
 
     public interface IPositionToValue
     {
